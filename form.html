@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title> Login Page </title>  
+    <link rel = "stylesheet" href = "style.css">
+    <script src="./submit.js"></script>
+</head>
+
+<body>    
+    <center> <h1 style = "color:white"> Student Login Form </h1> </center>  
+     <form>  
+        <div class="container"> 
+        <center>
+            <table>
+            <tr><label><td>Roll Number :</td></label> <td>
+            <input type="text" placeholder="Enter Roll Number" id ="rollno" minlength="12" maxlength="12"required></td></tr>
+            <tr><label><td>Full Name :</td></label>  <td>
+            <input type="text" placeholder="Enter Full Name" id ="name" required></td></tr>
+            <tr><label><td>Address :</td></label>   <td>
+            <input type="text" placeholder="Address" id ="address"  required></td></tr>
+            <tr><label><td>DOB:</td></label>   <td>
+            <input type="date" placeholder="DOB" id ="dob" required></td></tr>
+             <tr><label><td>Age:</td></label>   <td>
+            <input type="number" placeholder="Age" id ="age" required></td></tr>
+            <tr><label><td>Gender:</td></label>   <td>
+
+            <select id = "gender"><option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option></select> </td>
+
+
+            <tr><label><td>Phone No :</td></label>  <td>
+            <input type="text" placeholder="Phone Number" id ="contactno" maxlength="10" minlength="10" required></td></tr>
+            <tr><td colspan="2"><button type="submit" onclick="submitForm(event)">Submit</button></td></tr>   
+            </table> 
+        </center>  
+        </div>   
+        
+    </form>     
+</body>
+</html>
